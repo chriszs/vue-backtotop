@@ -44,10 +44,6 @@ export default {
    * @return {void}
    */
   created () {
-    if (typeof window === 'undefined' || !window) {
-      return false;
-    }
-  
     let catchScroll = () => {
       this.visible = (window.pageYOffset > parseInt(this.visibleOffset))
     }
